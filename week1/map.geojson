@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"place":"CSULB Library","color":"blue"},"geometry":{"type":"Point","coordinates":[-118.11474323272705,33.77711630838097]}},{"type":"Feature","properties":{"place":"CSULB Starbucks","color":"red"},"geometry":{"type":"Point","coordinates":[-118.11448842287064,33.7770204411261]}}]}
