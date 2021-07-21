@@ -7,7 +7,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 function addMarker(data){
         // console.log(data)
         // these are the names of our fields in the google sheets:
-        L.marker([data.lat,data.lng]).addTo(myMap).bindPopup(`<h2>${data.timestamp}</h2>`)
+        L.marker([data.lat,data.lng])
+                .addTo(myMap)
+                .bindPopup(`
+                        <h2>How did you get to the location? ${data.howdidyougettothelocation}</h2>
+                        <h2>How did you make the appointment? ${data.howdidyoumaketheappointment}</h2>
+                        <h2>Time and Date of Submission ${data.timestamp}</h2>
+                        `)
         return data.timestamp
 }
 
